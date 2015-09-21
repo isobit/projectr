@@ -1,25 +1,5 @@
 #!/usr/bin/env ruby
 # vim: set ft=ruby:
-require 'rubygems'
-require 'bundler/setup'
-require 'commander/import'
 require 'projectr'
-require 'projectr/version'
 
-program :name, 'Projectr'
-program :version, Projectr::VERSION
-program :description, 'Project templating tool for quickly starting and updating new projects.'
-
-command :list do |c|
-	c.syntax = 'list [options]'
-	c.action do |args, opts|
-		Projectr.list()
-	end
-end
-
-command :load do |c|
-	c.syntax = 'load <name> [options]'
-	c.action do |args, opts|
-		Projectr.load(args.first)
-	end
-end
+Projectr.run()
