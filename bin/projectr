@@ -3,9 +3,11 @@
 require 'rubygems'
 require 'commander'
 require 'projectr'
+require 'projectr/version'
 
 Commander.configure do
 	program :name, 'Projectr'
+	program :version, Projectr::VERSION
 	command :list do |c|
 		Projectr.list()
 	end
