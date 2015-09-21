@@ -3,7 +3,7 @@ require 'json'
 
 module Projectr
 	PROJECT_PATH = "~/.projectr"
-	def list
+	def self.list
 		dirs = Dir.entries(PROJECT_PATH).select {|f| !File.directory? f}
 		dirs.each { |dir| puts dir }
 	end
