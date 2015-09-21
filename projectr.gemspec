@@ -10,7 +10,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["joshglendenning@gmail.com"]
 
   spec.summary       = %q{Project templating tool for quickly starting and updating new projects.}
-  spec.description   = %q{Project templating tool for quickly starting and updating new projects.}
   spec.homepage      = "https://github.com/joshglendenning/projectr"
   spec.license       = "MIT"
 
@@ -20,5 +19,5 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'bin'
   spec.executables   = ['projectr']
 
-  spec.add_dependency 'commander'
+  spec.add_dependency 'commander', '~> 4.3'
 end

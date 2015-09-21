@@ -4,19 +4,7 @@ Project templating tool for quickly starting and updating new projects.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'projectr'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install projectr
+	$ gem install projectr
 
 ## Usage
 
