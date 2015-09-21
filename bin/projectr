@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# vim: set ft=ruby:
+require 'rubygems'
+require 'commander'
+require 'projectr'
+
+Commander.configure do
+	program :name, 'Projectr'
+	command :list do |c|
+		Projectr.list()
+	end
+end
