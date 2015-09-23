@@ -1,6 +1,4 @@
 require 'rubygems'
-require 'bundler/setup'
-
 require 'projectr/version'
 require 'fileutils'
 

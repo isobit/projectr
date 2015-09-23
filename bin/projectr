@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # vim: set ft=ruby:
+require 'rubygems'
 require 'commander/import'
 require 'projectr'
 require 'projectr/version'
