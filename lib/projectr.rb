@@ -17,7 +17,7 @@ module Projectr
 		projectrfile_path = "#{dest_path}/Projectrfile"
 		if File.exist?(projectrfile_path)
 			FileUtils.chmod('+x', projectrfile_path)
-			exec "#{projectrfile_path}"
+			system "#{projectrfile_path}"
 			FileUtils.rm(projectrfile_path)
 		end
 	end

@@ -5,15 +5,15 @@ require 'projectr/version'
 GEM_NAME = 'projectr'
 
 task :build do
-	exec "gem build #{GEM_NAME}.gemspec"
+	system "gem build #{GEM_NAME}.gemspec"
 end
 
 task :install => [:build] do
-	exec "gem install #{GEM_NAME}-#{Projectr::VERSION}.gem"
+	system "gem install #{GEM_NAME}-#{Projectr::VERSION}.gem"
 end
 
 task :release => [:build] do
-	exec "gem push #{GEM_NAME}-#{Projectr::VERSION}.gem"
+	system "gem push #{GEM_NAME}-#{Projectr::VERSION}.gem"
 end
 
 task :bump do
@@ -29,5 +29,5 @@ task :bump do
 end
 
 task :clean do
-	exec "rm *.gem"
+	system "rm *.gem"
 end
